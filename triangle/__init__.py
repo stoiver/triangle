@@ -1,12 +1,18 @@
-__version__ = __import__('pkg_resources').get_distribution('triangle').version
-
-from triangle.data import (
-    loads, load, get_data, show_data,
+from .version import __version__
+from .data import (
+    loads,
+    load,
+    get_data,
+    show_data,
 )
-from triangle.plot import (
-    plot, comparev, compare,
+from .plot import (
+    plot,
+    comparev,
+    compare,
 )
-from triangle.tri import (
+from .tri import (
     triangulate,
-    convex_hull, delaunay, voronoi,
+    convex_hull,
+    delaunay,
+    voronoi,
 )
